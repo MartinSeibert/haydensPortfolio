@@ -1,3 +1,4 @@
 from django.contrib import admin
+from frontPage.models import PortfolioPiece
 
-# Register your models here.
+admin.site.register(PortfolioPiece)
