@@ -179,7 +179,8 @@
                     <ul class="timeline">
                         {% if about_pieces %}
                         {% for About in about_pieces %}
-                        <li>
+
+                        <li class="about-list-item">
                             <div class="timeline-image">
                                 <img class="img-circle img-responsive" src="/{{ About.image.url }}" alt="">
                             </div>
@@ -364,6 +365,14 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="{% static "js/agency.js" %}"></script> <!-- JavaScript -->
+
+    <!-- This very well may be a bad way to do this, but it will work for now. Maybe there's some way to use css or something. -->
+    <script>
+        $(document).ready(function(){
+            $('.about-list-item').filter(":odd").toggleClass('timeline-inverted');
+
+        });
+    </script>
 
 </body>
 
