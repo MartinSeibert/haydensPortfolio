@@ -206,7 +206,7 @@
 
 
 
-    <!-- Clients Aside -->
+    <!-- Clients Aside for if you have clients to display
     <aside class="clients">
         <div class="container">
             <div class="row">
@@ -233,7 +233,7 @@
             </div>
         </div>
     </aside>
-
+    -->
     <!-- Contact Section -->
     <section id="contact">
         <div class="container">
@@ -292,6 +292,8 @@
                         <li><a href="#"><i class="fa fa-facebook"></i></a>
                         </li>
                         <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -365,14 +367,6 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="{% static "js/agency.js" %}"></script> <!-- JavaScript -->
-
-    <!-- This very well may be a bad way to do this, but it will work for now. Maybe there's some way to use css or something. -->
-    <script>
-        $(document).ready(function(){
-            $('.about-list-item').filter(":odd").toggleClass('timeline-inverted');
-
-        });
-    </script>
 
 </body>
 
