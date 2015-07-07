@@ -15,3 +15,11 @@ class PortfolioPiece(models.Model):
 
     def __unicode__(self):  #For Python 2, use __str__ on Python 3
         return self.name
+
+class AboutPiece(models.Model):
+    # if I change this to /static instead, I can get rid of the / in front of the url that is in the index
+    image = models.ImageField(upload_to='static/img/aboutPieces', verbose_name='About photo', null=True, blank=False)
+    dateHeading = models.CharField(max_length=128)
+    descriptionSubheader = models.CharField(max_length=256, default="")
+    bodyText = models.CharField(max_length=1024)
+    
