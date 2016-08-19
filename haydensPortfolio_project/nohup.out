@@ -1,0 +1,9 @@
+[2015-09-10 00:45:36 +0000] [14952] [INFO] Starting gunicorn 19.3.0
+[2015-09-10 00:45:36 +0000] [14952] [INFO] Listening at: http://127.0.0.1:8000 (14952)
+[2015-09-10 00:45:36 +0000] [14952] [INFO] Using worker: sync
+[2015-09-10 00:45:36 +0000] [14957] [INFO] Booting worker with pid: 14957
+[2015-09-10 01:29:51 +0000] [14952] [INFO] Handling signal: hup
+[2015-09-10 01:29:51 +0000] [14952] [INFO] Hang up: Master
+[2015-09-10 01:29:51 +0000] [26935] [INFO] Booting worker with pid: 26935
+[2015-09-27 21:14:15 +0000] [14952] [CRITICAL] WORKER TIMEOUT (pid:26935)
+[2015-09-27 21:14:41 +0000] [5616] [INFO] Booting worker with pid: 5616

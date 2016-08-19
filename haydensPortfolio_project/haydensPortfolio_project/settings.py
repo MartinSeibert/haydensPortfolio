@@ -21,9 +21,9 @@ with open('/etc/secret_key.txt') as f:
     SECRET_KEY = f.read().strip()
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-TEMPLATE_DEBUG = False
+TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -87,7 +87,7 @@ STATIC_PATH = os.path.join(BASE_DIR,'static')
 STATIC_URL = '/static/' # You may find this is already defined as such.
 
 STATICFILES_DIRS = (
-    STATIC_PATH,
+	STATIC_PATH,
 )
 
 TEMPLATE_DIRS = (
