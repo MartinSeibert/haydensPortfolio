@@ -21,11 +21,12 @@ with open('/etc/secret_key.txt') as f:
     SECRET_KEY = f.read().strip()
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['167.99.237.32',
+		'haydenseibert.club']
 
 
 # Application definition
@@ -84,6 +85,7 @@ USE_TZ = True
 
 STATIC_PATH = os.path.join(BASE_DIR,'static')
 
+STATIC_ROOT = '/opt/myenv/static/'
 STATIC_URL = '/static/' # You may find this is already defined as such.
 
 STATICFILES_DIRS = (
